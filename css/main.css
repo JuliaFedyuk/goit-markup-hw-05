@@ -1,0 +1,632 @@
+:root {
+  --primary-text-color: black;
+  --title-text-color: black;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primery-grey-color: #757575;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* Шапка */
+
+.page-header .flexbox {
+  align-items: center;
+  height: 80px;
+}
+
+.page-header {
+  height: 80px;
+}
+
+.contact a:first-child {
+  margin-bottom: 8px;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Лого */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration-line: none;
+  margin-right: 93px;
+  display: block;
+}
+
+.logo-part {
+  color: var(--accent-color);
+}
+
+.logo-second-part {
+  color: #ffffff;
+}
+
+/* Линки */
+
+a {
+  text-decoration-line: none;
+  color: grey;
+}
+
+a:focus,
+a:hover {
+  color: var(--accent-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+.mail:hover {
+  color: var(--accent-color);
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-item {
+  color: var(--primary-text-color);
+}
+
+nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.studio {
+  color: var(--accent-color);
+}
+
+.studio:hover {
+  color: var(--accent-color);
+}
+
+.studio-link {
+  color: black;
+}
+
+.studio-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio-link {
+  color: black;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: var(--primery-grey-color);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--primery-grey-color);
+}
+
+.contact-item:hover {
+  color: var(--accent-color);
+}
+.contact-item:hover svg {
+  fill: var(--accent-color);
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+}
+
+/* Заголовки */
+
+.hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../pictures/hero_img.jpg);
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  margin-bottom: 30px;
+}
+
+.hero {
+  text-align: center;
+  width: auto;
+  padding-top: 200px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+p {
+  color: var(--primery-grey-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.activity-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Преимущества */
+
+.advantages {
+  padding-top: 94px;
+}
+
+.benefits {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url(../pictures/antenna.svg);
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url(../pictures/clock.svg);
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url(../pictures/diagram.svg);
+}
+
+.advantages-item:nth-child(4)::before {
+  background-image: url(../pictures/astronaut.svg);
+}
+
+/* Команда */
+
+.name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.person-information {
+  margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.team-item {
+  text-align: center;
+  background-color: #ffffff;
+  height: 428px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-section {
+  background-color: #f5f4fa;
+  width: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  fill: #afb1b8;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.social-icon-link {
+  display: flex;
+}
+
+.social-icon-item:hover {
+  color: var(--accent-color);
+}
+.social-icon-item:hover svg {
+  color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-customers-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.regular-customers-item {
+  display: flex;
+  height: 90px;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primery-grey-color);
+  border-radius: 4px;
+}
+
+.regular-customers-logo {
+  fill: var(--primery-grey-color);
+}
+
+.regular-customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-customers-item:hover {
+  border: 1px solid var(--accent-color);
+}
+.regular-customers-item:hover svg {
+  fill: var(--accent-color);
+}
+
+/* Контакты */
+
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address-container {
+  display: flex;
+}
+
+.contact {
+  color: var(--accent-color);
+  display: block;
+}
+
+/* Кнопки */
+
+button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: black;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 22px;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.main-button {
+  font-family: Roboto, sans-serif;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  border: none;
+}
+
+.main-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio {
+  color: var(--accent-color);
+}
+
+.footer-address .logo {
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+/* Работы */
+
+.works {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.5;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+.logo-second-part {
+  color: #ffffff;
+}
+
+/* Портфолио */
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.button-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.first-button {
+  background-color: #2196f3;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.work-section {
+  padding-bottom: 78px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.work-item {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.work-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work .work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-information {
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  margin-top: 9px;
+}
+
+/* Футер */
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+
+.footer-part {
+  display: block;
+}
+
+.footer-part .third-title {
+  color: var(--primary-white-color);
+}
+
+.footer-part.joining {
+  margin-top: 12px;
+}
+
+.footer-part:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-part .social-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-icon-item:hover {
+  background-color: var(--accent-color);
+}
+
+.person-information .social-icon:hover {
+  fill: var(--primary-white-color);
+}
