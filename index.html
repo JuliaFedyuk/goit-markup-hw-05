@@ -26,14 +26,16 @@
             <div class="main-nav">
               <ul class="list menu-list flexbox">
                 <li class="menu-item">
-                  <a href="./index.html"></a><span class="studio">Студия</span>
+                  <a href="./index.html" class="menu-link current">Студия</a>
                 </li>
                 <li class="menu-item">
-                  <a class="portfolio-link" href="./portfolio.html"
-                    >Портфолио</a
+                  <a href="./portfolio.html" class="portfolio-link menu-link">
+                    Портфолио</a
                   >
                 </li>
-                <li class="menu-item">Контакты</li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Контакты</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -127,21 +129,34 @@
         <h2 class="second-title">Чем мы занимаемся</h2>
         <ul class="activity">
           <li class="activity-item">
-            <img src="./photos/box1.jpg" alt="Человек пишет код" width="370" />
+            <div class="activity-thumb">
+              <img
+                src="./photos/box1.jpg"
+                alt="Человек пишет код"
+                width="370"
+              />
+              <p class="activity-label">Десктопные приложения</p>
+            </div>
           </li>
           <li class="activity-item">
-            <img
-              src="./photos/box2.jpg"
-              alt="Человек тестирует программы на мобильном телефоне"
-              width="370"
-            />
+            <div class="activity-thumb">
+              <img
+                src="./photos/box2.jpg"
+                alt="Человек тестирует программы на мобильном телефоне"
+                width="370"
+              />
+              <p class="activity-label">Мобильные приложения</p>
+            </div>
           </li>
           <li class="activity-item">
-            <img
-              src="./photos/box3.jpg"
-              alt="Планшет с картинкой"
-              width="370"
-            />
+            <div class="activity-thumb">
+              <img
+                src="./photos/box3.jpg"
+                alt="Планшет с картинкой"
+                width="370"
+              />
+              <p class="activity-label">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -557,5 +572,9 @@
         </div>
       </footer>
     </section>
+
+    <div class="backdrop">
+      <div class="modal"></div>
+    </div>
   </body>
 </html>
