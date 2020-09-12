@@ -58,6 +58,7 @@ img {
   top: 0;
   background-color: var(--primary-white-color);
   z-index: 1;
+  border-bottom: 1px solid #ececec;
 }
 
 .contact a:first-child {
